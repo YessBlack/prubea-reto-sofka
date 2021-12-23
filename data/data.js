@@ -1,4 +1,4 @@
-export const data = [
+export const categoriaGeneral = [
     {
         pregunta: "¿En qué año llegó Cristóbal Colón a América?",
         opciones: [
@@ -50,4 +50,58 @@ export const data = [
         correcta: "Rodio",
     }
   ];
+  
+  export const categoriaHistoria = [
+    {
+        pregunta: "¿En qué año cayó el Imperio Romano de Occidente?",
+        opciones: [
+            "340",
+            "476",
+            "534", 
+            "412"
+        ],
+        correcta: "476",
+    },
+    {
+        pregunta: "¿Cómo se llamaba el primer Presidente de los Estados Unidos?",
+        opciones: [
+            "Abraham Lincoln",
+            "John Adams",
+            "George Washington", 
+            "Thomas Jefferson"
+        ],
+        correcta: "George Washington",
+    },
+    {
+        pregunta: "¿Qué faraón era el marido de Nefertiti?",
+        opciones: [
+            "Akenaton",
+            "Ramses II",
+            "Ramses I", 
+            "Tutankamon"
+        ],
+        correcta: "Akenaton",
+    },
+    {
+        pregunta: "¿Por qué condenó la Iglesia a Galileo Galilei?",
+        opciones: [
+            "Por decir que la tierra era redonda",
+            "Por señalar los abusos de la iglesia",
+            "Por negar la existencia de Dios", 
+            "Por decir que la tierra gira alrededor del sol"
+        ],
+        correcta: "Por decir que la tierra gira alrededor del sol",
+    },
+    {
+        pregunta: "¿Cómo se llamaba el cañón alemán más famoso de la I Guerra Mundial ?",
+        opciones: [
+            "Mackensen M-14",
+            "Enola Gay",
+            "Gran Berta", 
+            "Luftwaffe"
+        ],
+        correcta: "Gran Berta",
+    }
+  ];
+
   

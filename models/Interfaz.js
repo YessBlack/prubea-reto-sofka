@@ -46,7 +46,7 @@ export class Interfaz{
                 <h2 class="subtitle-score">Categoria</h2>
                 <h2 class="subtitle-score">Tu Puntaje ${puntos}</h2>
 
-                <div class="btn-next btn btn-test">
+                <div class="btn-next btn btn-test" id="siguente-categoria">
                     <a href="test.html"><span class="icon-start icon"></span>Siguiente Categoria</a>
                 </div>
                 <div class="btn-exit btn">
@@ -57,5 +57,16 @@ export class Interfaz{
 
         const element = document.getElementById('main')
         element.innerHTML = puntaje
+    }
+
+    /**
+     * 
+     * @param {number} opcionActual la posicion actual de la pregunta en el test
+     * @param {*} total 
+     */
+    mostrarProgreso(opcionActual, total){
+        
+        const element = document.getElementById('progreso')
+        element.innerHTML = `Pregunta ${opcionActual} de ${total-1}`
     }
 }
