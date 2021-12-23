@@ -65,8 +65,7 @@ export class Interfaz{
      * @param {*} total 
      */
     mostrarProgreso(opcionActual, total){
-        
         const element = document.getElementById('progreso')
-        element.innerHTML = `Pregunta ${opcionActual} de ${total-1}`
+        element.innerHTML = `Pregunta ${opcionActual} de ${total}`
     }
 }

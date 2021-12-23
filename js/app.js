@@ -19,7 +19,7 @@ const renderizarPagina = (test,interfaz) => {
         test.adivinarPregunta(opcion);
         renderizarPagina(test,interfaz)
     });
-    interfaz.mostrarProgreso(test.iPregunta,test.preguntas.length)
+    interfaz.mostrarProgreso(test.iPregunta + 1,test.preguntas.length)
     }
     
 }
