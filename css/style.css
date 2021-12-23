@@ -1,0 +1,221 @@
+/*Resetear para no modificar el modelo de caja*/
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+/*Variables globales a usar*/
+:root {
+    --color-primary:#55D2FD ;
+    --color-secondary: #10137B;
+    --color-third: #FF7E06;
+    --color-bg-primary: #FBFDFE;
+    --color-bg-secondary: #F4F7F9;
+    --color-border-card: #C3C6C8;
+    --color-danger: #d9534f;
+    --colum-mg: 70px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color-bg-primary);
+}
+/*Estilos de Header*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 5px .5px var(--color-third);
+}
+.header img {
+    width: 150px;
+}
+/*Estilos para el titulo principal y descripcion*/
+.title-principal {
+    text-align: center;
+    color: var(--color-secondary);
+    font-weight: bolder;
+}
+.title-principal p {
+    font-weight: normal;
+}
+/*Estilos para el contenedor del banner > img y las tarjetas*/
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*Ocultamos banner img para dispositivos moviles*/
+.img-banner img {
+    display: none;
+}
+/*Estilos para las tajetas*/
+.card {
+    padding: .3em .5em;
+    border-radius: 10px;
+    border: 2px solid var(--color-border-card);
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.card img {
+    width: 60px;
+}
+.card p {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+.opciones-pregunta {
+    color: var(--color-primary);
+    font-weight: bold;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+/*Estilos para el boton principal*/
+.btn, .btn-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-start a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-third);
+    padding: .7em;
+    border-radius: 10px;
+}
+/*Eventos hover sobre boton y cards*/
+.card:hover {
+    background-color: var(--color-secondary);
+}
+.btn-start a:hover {
+    border: 1px solid var(--color-third);
+    background-color: white;
+    color: black;
+}
+.icon {
+    padding:.5em;
+}
+/*Acomodar elementos para tablets*/
+@media (min-width:880px) and (max-width:1024px){
+    .img-banner img {
+        width: 570px;
+        display: inline-block;
+    }
+    .banner {
+        justify-content: space-between;
+    }
+    .main {
+        margin-left: var(--colum-mg);
+        margin-right: var(--colum-mg);
+    }
+}
+/*Acomodar elementos para laptops */
+@media (min-width:1024px){
+    .img-banner img {
+        width: 570px;
+        display: inline-block;
+    }
+    .banner {
+        justify-content: space-around;
+    }
+    .header img {
+        margin-left: var(--colum-mg);
+    }
+    .header p {
+        margin-right: var(--colum-mg);
+    }
+    .main {
+        margin-left: var(--colum-mg);
+        margin-right: var(--colum-mg);
+    }
+}
+
+/*Modal nombre jugador*/
+/*Estilos del modal, medida y ocultamos*/
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+}
+/*Estilos al contenedor del modal*/
+.container-modal {
+    width: 70%;
+    margin: auto;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+}
+/*Estilos al input donde se recoge informacion*/
+.nick-player input {
+    padding: .8em;
+    border: 2px solid var(--color-third);
+    border-radius: 5px;
+    text-align: center;
+}
+/*Estilos de botones*/
+.btn a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-secondary);
+    padding: .7em;
+    border-radius: 10px;
+    border: 1px solid var(--color-secondary);
+}
+.btn-exit a{
+    background-color: var(--color-danger);
+    border: 1px solid var(--color-danger);
+}
+/*Evento hover */
+.btn-next a:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+.btn-exit a:hover {
+background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+/*Mostrar el modal*/
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+/*Estilo para test*/
+.btn-test {
+    padding: 1em;
+}
+
+/**/
+
+.container-score{
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    border: 1px solid var(--color-primary);
+    margin: 5em auto;
+    padding: 2em;
+    box-shadow: 1px 1px 5px 2px var(--color-primary);
+
+}
+.title-score{
+    color: var(--color-third);
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle-score {
+    color: var(--color-secondary);
+}

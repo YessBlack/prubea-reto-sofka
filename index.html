@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto | Sofka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://file.myfontastic.com/eStkfdYmFUFyU4sM2fYSZS/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Encabezado de la pagina - logo y texto-->
+    <header class="header">
+        <img src="img/logo.png" alt="logo sofka u">
+        <p>Reto 2021</p>
+    </header>
+    <!--Estructura principal de la web-->
+    <main class="main">
+        <!--Titulo y descripcion-->
+        <div class="title-principal">
+            <h1>Reto Tecnico - Sofka</h1>
+            <p>Resuelve las preguntas y ganaras puntos</p>
+        </div>
+        <!--Contaniner Banner-->
+        <div class="banner">
+            <div class="img-banner">
+                <img src="img/banner_principal.svg" alt="Banner que representa el trabajo y esfuerzo colaborativo">
+            </div>
+            <!--Container cards-->
+            <!--Se describe las categorias a evaluar-->
+            <div class="card-categ">
+                <!--Estructura tarjetas-->
+                <div class="card-general card">
+                    <p>General</p>
+                    <img src="img/icon_general.svg" alt="icono que representa la categoria general">
+                </div>
+                <div class="card-history card">
+                    <p>Historia</p>
+                    <img src="img/icon_history.svg" alt="icono que representa la categoria historia">
+                </div>
+                <div class="card-tech card">
+                    <p>Tecnologia</p>
+                    <img src="img/icon_tech.svg" alt="icono que representa la categoria tecnologia">
+                </div>
+                <div class="card-web card">
+                    <p>Diseño web</p>
+                    <img src="img/icon_general.svg" alt="icono que representa la categoria diseño web">
+                </div>
+                <div class="card-games card">
+                    <p>Videojuegos</p>
+                    <img src="img/icon_game.svg" alt="icono que representa la categoria videojuegos">
+                </div>
+            </div>
+        </div>
+        <!--Boton para comenzar con el test-->
+        <div class="btn-start">
+            <a href="#" id="btn_Comenzar"><span class="icon-start icon"></span>Comenzar</a>
+        </div>
+    </main>
+    <!--Modal para nombre del jugador-->
+    <section class="modal">
+        <div class="container-modal">
+            <div class="nick-player">
+                <input type="text" placeholder="Nick del jugador">
+            </div>
+            <div class="btn btn-next">
+                <a href="test.html"><span class="icon-start icon"></span>Siguiente</a>
+            </div>
+            <div class="btn-exit btn">
+                <a href="#"><span class="icon-exit icon"></span>Salir</a>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
