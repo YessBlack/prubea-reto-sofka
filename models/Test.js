@@ -8,7 +8,7 @@ export class Test{
     puntos = 0
 
     /**
-     * 
+     *
      * @param {Pregunta[]} preguntas arreglo de preguntas
      */
     constructor(preguntas){
@@ -16,7 +16,7 @@ export class Test{
     }
 
     /**
-     * 
+     *
      * @returns {Pregunta} pregunta encontrada
      */
     getIndexPregunta(){
@@ -24,10 +24,10 @@ export class Test{
     }
 
     /**
-     * 
+     *
      * @param {string} respuesta espera algun texto
      */
-    
+
     adivinarPregunta(respuesta){
         if(this.getIndexPregunta().respuestaCorrecta(respuesta)){
             this.puntos++
@@ -36,7 +36,7 @@ export class Test{
     }
 
     /**
-     * 
+     *
      * @returns {boolean} comparar indices
      */
     aFinalizado(){

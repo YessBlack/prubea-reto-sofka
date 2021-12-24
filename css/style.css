@@ -219,3 +219,11 @@ background-color: white;
 .subtitle-score {
     color: var(--color-secondary);
 }
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--color-secondary);
+    font-weight: bolder;
+}

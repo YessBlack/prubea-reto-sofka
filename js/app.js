@@ -3,6 +3,7 @@ import { preguntas } from "./../data/preguntas.js";
 import { Test } from "./../models/Test.js";
 import { Interfaz } from "./../models/Interfaz.js";
 
+
 /**
  * 
  * @param {Test} test objeto test 
@@ -17,9 +18,12 @@ const renderizarPagina = (test,interfaz) => {
 
         interfaz.mostrarOpciones(test.getIndexPregunta().opciones, (opcion) => {
         test.adivinarPregunta(opcion);
+        
         renderizarPagina(test,interfaz)
     });
-    interfaz.mostrarProgreso(test.iPregunta + 1,test.preguntas.length)
+        interfaz.mostrarProgreso(test.iPregunta + 1,test.preguntas.length)
+        interfaz.mostrarCategoria(test.getIndexPregunta().categoria)
+        interfaz.mostrarDificultad(test.getIndexPregunta().dificultad)
     }
     
 }

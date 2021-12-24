@@ -13,7 +13,6 @@ export class Interfaz{
         const preguntaContenido = document.getElementById('pregunta')
         preguntaContenido.innerHTML = pregunta
     }
-
     /**
      * 
      * @param {string[]} opciones las opciones de respuesta
@@ -64,8 +63,21 @@ export class Interfaz{
      * @param {number} opcionActual la posicion actual de la pregunta en el test
      * @param {*} total 
      */
+
     mostrarProgreso(opcionActual, total){
+        console.log(opcionActual)
         const element = document.getElementById('progreso')
         element.innerHTML = `Pregunta ${opcionActual} de ${total}`
+        
+    }
+
+    mostrarCategoria(categoria){
+        const categoriaTitle = document.getElementById('categoria-title')
+        categoriaTitle.innerHTML = categoria        
+    }
+
+    mostrarDificultad(dificultad) {
+        const dificultadTitle = document.getElementById('dificultad-title')
+        dificultadTitle.innerHTML = dificultad
     }
 }
