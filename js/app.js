@@ -18,7 +18,7 @@ const renderizarPagina = (test,interfaz) => {
 
         interfaz.mostrarOpciones(test.getIndexPregunta().opciones, (opcion) => {
         test.adivinarPregunta(opcion);
-        
+        interfaz.mostrarPuntosRonda(test.puntos)
         renderizarPagina(test,interfaz)
     });
         interfaz.mostrarProgreso(test.iPregunta + 1,test.preguntas.length)

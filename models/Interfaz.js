@@ -42,20 +42,21 @@ export class Interfaz{
         const puntaje = `
             <div class="container-score">
                 <h1 class="title-score">Resultado</1>
-                <h2 class="subtitle-score">Categoria</h2>
                 <h2 class="subtitle-score">Tu Puntaje ${puntos}</h2>
 
-                <div class="btn-next btn btn-test" id="siguente-categoria">
-                    <a href="test.html"><span class="icon-start icon"></span>Siguiente Categoria</a>
-                </div>
                 <div class="btn-exit btn">
-                    <a href="index.html"><span class="icon-exit icon"></span>Retirarse</a>
+                    <a href="index.html"><span class="icon-exit icon"></span>Salir</a>
                 </div>
             </div>
         `
 
         const element = document.getElementById('main')
         element.innerHTML = puntaje
+    }
+
+    mostrarPuntosRonda(puntos){
+        const mostrarPuntos = document.getElementById('show-points')
+        mostrarPuntos.innerHTML = puntos
     }
 
     /**

@@ -30,7 +30,10 @@ export class Test{
 
     adivinarPregunta(respuesta){
         if(this.getIndexPregunta().respuestaCorrecta(respuesta)){
-            this.puntos++
+            this.puntos+=100
+        }else{
+            alert('Sigue intentando')
+            window.location.href='./../index.html'
         }
         this.iPregunta++
     }
